@@ -38,7 +38,7 @@ Options:
 
 ####Show default chart for a number####
 
-	python lulz.py -n "+18885551212"
+	python smsstats.py -n "+18885551212"
 	Date: 05/30/10 - AM		 In: 0		Out:0
 	Date: 05/30/10 - PM		 In: 12		Out:10
 	Date: 05/31/10 - AM		 In: 0		Out:1
@@ -47,7 +47,7 @@ Options:
 	Date: 06/01/10 - PM		 In: 3		Out:3
 
 ####Show same number, but with chart broken into 1 hr chunks instead of 12 hour, with a timestamp change####
-	python lulz.py -n "+18885551212" -c 3600 --dateformat "%y/%m/%d %I%p"
+	python smsstats.py -n "+18885551212" -c 3600 --dateformat "%y/%m/%d %I%p"
 	Date: 10/05/30 08PM		 In: 0		Out:0
 	Date: 10/05/30 09PM		 In: 32		Out:28
 	Date: 10/05/30 10PM		 In: 9		Out:15
