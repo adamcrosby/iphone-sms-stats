@@ -2,6 +2,15 @@
 
 ##Current Status##
 Currently functioning for frequency generation (ie: how many in/out messages for a specific time period for a specific phone number).
+This script requires the iphone SMS database to be available, and unencrypted.  By default, this database file is called 
+
+	3d0d7e5fb2ce288813306e4d4636395e047a3d28.mddata
+
+and is located in
+
+	~/Library/Application\ Support/MobileSync/Backup/<phone guid>/
+	
+on Mac OS X.  
 
 ##Usage##
 Options:
