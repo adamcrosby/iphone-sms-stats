@@ -33,7 +33,6 @@ def main():
 	
 def output(data, output, dateformat):
 
-	print "Output format: %s" % output
 	if (output == "CSV") or (output =="csv"):
 		# Pretty print to the console
 		printformat = "%s,%s,%s"
