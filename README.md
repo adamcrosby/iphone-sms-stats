@@ -10,7 +10,8 @@ and is located in
 
 	~/Library/Application\ Support/MobileSync/Backup/<phone guid>/
 	
-on Mac OS X.  
+on Mac OS X.  Typical usage assumes a copy of the mddata db file is made in the smsstats.py directory, and called 'sms.db'.  It's probably not
+a good idea to run this against the mddata file in-place, to avoid potentially corrupting/modifying the iPhone backup (the file is MD5 hashed as-is).
 
 ##Usage##
 Options:
