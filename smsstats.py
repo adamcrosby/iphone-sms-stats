@@ -18,9 +18,9 @@ def main():
 	parser.set_defaults(db_file="sms.db")
 	parser.set_defaults(starttime=date.strftime(date.today() + timedelta(days=-7), "%d-%m-%y"))
 	parser.set_defaults(endtime=date.strftime(date.today(), "%d-%m-%y"))
-	parser.set_defaults(chunksize=3600)
+	parser.set_defaults(chunksize=43200)
 	parser.set_defaults(output="Console")
-	parser.set_defaults(dateformat="%a %I%p")
+	parser.set_defaults(dateformat="%m/%d/%y - %p")
 
 	(options, args) = parser.parse_args()
 	if not options.number:

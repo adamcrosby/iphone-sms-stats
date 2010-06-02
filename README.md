@@ -26,25 +26,25 @@ Options:
 	                        format exactly, in quotes - e.g.: "(888) 555-1212"
 	  -c CHUNKSIZE, --chunksize=CHUNKSIZE
 	                        What size chunk to break the period into, in seconds
-	                        [default: 3600 (1 hour = 3600 seconds)]
+	                        [default: 43200 (12 hours)]
 	  -o OUTPUT, --output=OUTPUT
 	                        What kind of output format? - Console, CSV, TSV
 	                        [default: Console]
 	  -D DATEFORMAT, --dateformat=DATEFORMAT
-	                        stftime style date format [default: %a %I%p] (e.g.
-	                        'Wed 11AM')
+	                        stftime style date format [default: %m/%d/%y - %p] (e.g.
+	                        '05/29/10 - AM')
 
 ###Example Usage###
 
 ####Show default chart for a number####
 
 	python lulz.py -n "+18885551212"
-	Date: 10/05/30 - AM		 In: 0		Out:1
-	Date: 10/05/30 - PM		 In: 79		Out:90
-	Date: 10/05/31 - AM		 In: 47		Out:29
-	Date: 10/05/31 - PM		 In: 44		Out:41
-	Date: 10/06/01 - AM		 In: 4		Out:7
-	Date: 10/06/01 - PM		 In: 30		Out:29
+	Date: 05/30/10 - AM		 In: 0		Out:0
+	Date: 05/30/10 - PM		 In: 12		Out:10
+	Date: 05/31/10 - AM		 In: 0		Out:1
+	Date: 05/31/10 - PM		 In: 8		Out:4
+	Date: 06/01/10 - AM		 In: 9		Out:6
+	Date: 06/01/10 - PM		 In: 3		Out:3
 
 ####Show same number, but with chart broken into 1 hr chunks instead of 12 hour, with a timestamp change####
 	python lulz.py -n "+18885551212" -c 3600 --dateformat "%y/%m/%d %I%p"
